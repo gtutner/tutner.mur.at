@@ -1,0 +1,14 @@
+.fader {
+    position: relative;
+    display: inline-block;
+}
+
+.fader img {
+    vertical-align: top;
+}
+
+.fader img.next {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,522 @@
+/* generelle Nullstellung */
+* {
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+/* Abstände restaurieren */
+h1, h2, h3, h4, h5, h6, p, blockquote, address, pre, ul, ol, dl, table {
+margin-bottom: 1em;
+}
+/* Überschriften*/
+h1, h2, h3, h4, h5, h6 { padding-top: 1em; }
+/* Zitate einrücken */
+blockquote { margin: 1em 2em; }
+/* Auswahl in Auswahllisten (select)durch padding:0 schlecht lesbar */
+option { padding-left: 0.2em; padding-right: 0.3em; }
+/* Alle Listen einrücken */
+ul, ol, dl { margin-left: 1em; }
+/* Listenelemente mehr einrücken */
+li { margin-left: 1em; }
+/* Definitionen in Definitionslisten mehr einrücken */
+dd { margin-left: 2em; }
+/* Verschachtelte Listen ohne Außenabstand oben/unten */
+ul ul, ul ol, ul dl, ol ul, ol ol, ol dl, dl ul, dl ol, dl dl {
+margin-top: 0;
+margin-bottom: 0;
+}
+
+body {
+  background-color: #ffffff;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10pt;
+  margin: 15px;
+}
+img {
+  border: none;
+  border-radius: 4px;
+}
+hr {
+	color: #dddddd;
+	border: 1px solid;
+	margin-left: 4px;
+}
+
+/* Left */
+/*
+div.left {
+  width: 800px;
+  float: left;
+}
+*/
+
+/* Main */
+
+div.main {
+  white-space: nowrap;
+}
+
+div.main-left {
+   min-height: 500px;
+   width: 950px;
+   float: left;
+   white-space: normal;
+}
+
+div.main-right {
+	margin-left: 1000px;
+}
+
+/* Pages */
+
+/** Page Header **/
+
+div.pageheader {
+  height: 23px;
+}
+
+div.page-lang {
+  padding-top: 5px;
+}
+ul.page-lang {
+  margin: 0;
+  list-style-type: none;
+}
+li.page-lang-active {
+  float: right;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  margin-left: 5px;
+  margin-right: 0px;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+li.page-lang {
+  float: right;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+  margin-left: 5px;
+  margin-right: 0px;
+  text-transform: uppercase;
+}
+a:link.page-lang {
+  text-decoration: none;
+  color: #cccccc;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+a:visited.page-lang {
+  text-decoration: none;
+  color: #cccccc;
+}
+a:hover.page-lang {
+  background-color: #999999;
+  color: white;
+}
+div.title {
+  float: left;
+  /* background-color: #f6f6f6; */
+  color: #888888;
+  /*visibility: hidden;*/
+}
+
+/** Page Image **/
+div.page-img {
+  clear: both;
+  float: right;
+  margin-top: 15px;
+  width: 300px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+img.page-img {
+  width: 300px;
+}
+
+/** Page Intro **/
+
+/** Page Main **/
+
+div.page-main {
+  clear: both;
+}
+
+h1 {
+  font-size: 14pt;
+  margin-bottom: 20px;
+  padding-top: 0;
+  margin-top: 15px;
+}
+p {
+  margin-left: 20px;
+  padding-right: 8px;
+  /* text-align: justify; */
+}
+
+p.lutzxxx {
+  font-size: 20pt;
+  font-weight: bold;
+}
+h2 {
+  font-size: 12pt;
+  margin-left: 4px;
+  margin-bottom: 0.5em;
+}
+h3 {
+  font-size: 10pt;
+  margin-left: 8px;
+  padding-top: 0.5em;
+  margin-bottom: 0.25em;
+}
+a:link {
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+.embedobj {
+	width: 452px;
+	margin-left: 8px;
+	margin-bottom: 23px;
+	margin-right: 15px;
+	float: left;
+}
+
+.embedobj img {
+	width: 452px;
+	height: 339px;
+	float: left;
+}
+
+.embedobjplay {
+	position: absolute;
+	background: url('video_button.png') no-repeat center center;
+	width: 452px;
+	height: 339px;
+	clear: both;
+}
+
+.embedobjdesc {
+	clear: both;
+	height: 50px;
+	background-color: #cccccc;
+	border-radius: 4px;
+	display: table-cell;
+	vertical-align: middle;
+	width: 452px;
+}
+
+.embedobjdesc p {
+	font-weight: bold;
+	margin-left: 0;
+	text-align: center;
+	/*font-size: 12pt;*/
+	margin-bottom: 0;
+	padding-left: 8px;
+}
+
+#gallery_ls {
+	width: 452px;
+	height: 300px;
+	margin-left: 8px;
+	margin-right: 15px;
+	float: left;
+}
+
+#gallery_ls img {
+	height: 300px;
+	float: left;
+}
+
+#gallery_ls div {
+	background: url('video_button.png') no-repeat center center;
+	width: 452px;
+	height: 300px;
+	position: absolute;
+}
+
+#gallery_ls p {
+	font-weight: bold;
+	margin-left: 0;
+	text-align: center;
+	background-color: #cccccc;
+	border-radius: 4px;
+	margin-bottom: 0;
+}
+
+#gallery_p {
+	width: 452px;
+	height: 300px;
+	margin-left: 8px;
+	margin-bottom: 23px;
+	margin-right: 15px;
+	float: left;
+	background-color: #B4B4B4;
+    border-radius: 4px;
+}
+
+#gallery_p img {
+	height: 300px;
+	float: left;
+	margin-left: 127px;
+}
+
+#gallery_p div {
+	position: absolute;
+	background: url('video_button.png') no-repeat center center;
+	width: 452px;
+	height: 300px;
+}
+
+#gallery_p p {
+	font-weight: bold;
+	margin-left: 0;
+	text-align: center;
+	background-color: #cccccc;
+	border-radius: 4px;
+	margin-bottom: 0;
+	margin-top: 300px;
+}
+
+
+table.page-main {
+  margin-left: 16px;
+}
+
+tr.page-main {
+  /*margin-bottom: 30px;*/ /* What the fuck is this?! */
+}
+
+td.page-main {
+  padding: 5px;
+  border-bottom: 1px solid #DDDDDD;
+  /*border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: black;*/
+}
+
+/* Entfernt bei Firefox den unteren Abstand, wenn der Link-Text ein Image ist */
+a.img {
+  display: block;
+}
+table {
+  text-align: left;
+}
+/* Trennlinie */
+div.seperator {
+  clear: both;
+  height: 3px;
+  width: 950px;
+  margin-top: 5px;
+  background-image: url('../pics/tutner2008_merged_3.png');
+}
+
+/* Header */
+
+div.header {
+  width: 1325px;
+}
+.header-col1 {
+  height: 200px;
+  /*width: 301px;*/
+}
+div.header-col1 {
+  float: left;
+}
+div.header-col2 {
+  margin-left: 10px;
+  float: left;
+  width: 639px;
+  height: 200px;
+}
+div.header-col3 {
+  margin-left: 1000px;
+  height: 200px;
+}
+div.sitetitle {
+  font-size: 24px;
+}
+
+/** Header Buttons **/
+div.header-buttons {
+  float: right;
+  margin-top: 13px;
+}
+.header-buttons ul {
+  margin: 0;
+  list-style-type: none;
+  font-size: 14px;
+}
+
+.header-buttons li {
+  float: right;
+  margin-left: 5px;
+  margin-right: 0;
+}
+.header-buttons img {
+  height: 21px;
+  border-radius: 0;
+}
+div.sitesubtitle {
+  height: 14px;
+  margin-top: 7px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+div.headerplayer {
+  height: 24px;
+  margin-top: 25px;
+}
+div.feature {
+  background-color: #cccccc;
+  /*
+  outline-color: black;
+  outline-style: solid;
+  outline-width: 1px;
+  */
+  height: 40px;
+  margin-top: 23px;
+  margin-left: 10px;
+  margin-right: 20px;
+  padding-top: 6px;
+  /*padding-bottom: 5px;*/
+  padding-left: 10px;
+  font-size: 14px;
+  /*visibility: hidden;*/
+  border-radius: 4px;
+}
+span.feature-title {
+  font-weight: bold;
+}
+
+div.topnavi {
+  font-size: 16px;
+  float: left;
+  margin-top: 18px;
+}
+
+/** Navigation **/
+
+ul.topnavi {
+  margin: 0;
+}
+li.topnavi {
+  height: 16px;
+  list-style-type: none;
+  float: left;
+  border-right-width: 1px;
+  border-right-style: solid;
+  margin: 0;
+}
+a:link.topnavi-first {
+  text-decoration: none;
+  color: black;
+  padding-right: 10px;
+  padding-left: 0;
+}
+a:visited.topnavi-first {
+  color: black;
+}
+a:hover.topnavi-first {
+  background-color: #cccccc;
+  color: black;
+}
+a:link.topnavi {
+  text-decoration: none;
+  color: black;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+a:visited.topnavi  {
+  color: black;
+}
+a:hover.topnavi  {
+  background-color: #cccccc;
+  color: black;
+}
+
+/* Footer */
+div.footer {
+  width: 950px;
+}
+
+div.footer-left {
+  float: left;
+  width: 50%;
+}
+div.footer-right {
+  text-align: right;
+}
+
+/* konsole */
+div.konsole {
+  background-color: black;
+  color: white;
+  width: 325px;
+  height: 200px;
+  font-size: 13px;
+}
+span.konsole-cursor {
+  text-decoration: blink;
+}
+div.konsole-header {
+  background-color: #7e7f7e;
+  font-weight: bold;
+  padding-left: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  height: 15px;
+}
+img.konsole-header {
+  width: 15px;
+  height: 15px;
+  float: left;
+  border-radius: 0;
+}
+span.konsole-header {
+  margin-left: 4px;
+  float: left;
+}
+div.konsole-header-windowctrl {
+  float: right;
+  margin-right: 3px;
+}
+ul.konsole-header-windowctrl { 
+  margin: 0;
+  list-style-type: none;
+}
+li.konsole-header-windowctrl {
+  float: left;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  height: 13px;
+  width: 13px;
+  margin-left: 3px;
+  background-color: black;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  vertical-align: middle;
+}
+div.konsole-body {
+  padding: 3px;
+  overflow-y: scroll;
+  height: 173px;
+}
+div.konsole-line {
+  height: 13px;
+}
+
