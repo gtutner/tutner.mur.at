@@ -454,8 +454,13 @@ div.footer {
 
 div.footer-left {
   float: left;
-  width: 50%;
+  width: 80%;
 }
+
+.footer-left p {
+  margin-left: 0;
+}
+
 div.footer-right {
   text-align: right;
 }
