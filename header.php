@@ -6,7 +6,7 @@
 			echo "	<a id=\"headerpic\" href=\"/\">\n";
 		}
 	?>
-						<img class="header-col1" src="pics/tutner.jpg" alt="Gernot Tutner" />
+						<img class="header-col1" src="pics/tutner4.jpg" alt="Gernot Tutner" />
 					</a>
 </div>
 
@@ -16,8 +16,10 @@
 	<div class="headerplayer">
 			<?php f_audioplayer ('audio/tutner_-_nim_-_2014-08-27_-_section5.mp3'); ?>
 	</div>
-	<div class="feature">
-			<span class="feature-title">NEXT:</span>
+	<div class="feature" style="visibility: hidden;">
+			<span class="feature-title">
+				NEXT:
+			</span>
 			<span>
 				<?php include 'data/next.txt'; ?>
 			</span>

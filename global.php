@@ -164,6 +164,7 @@ function f_header_switches () {
 	}
 	echo "				</a>\n";
 	echo "			</li>\n";
+	/*
 	echo "			<li>\n";
 	if ($fx) {
 		echo "			<img id=\"b_speaker\" src=\"styles/button_speaker_on.png\" title=\"FX OFF\"/ onclick=\"fx(0)\" >\n";
@@ -171,6 +172,7 @@ function f_header_switches () {
 		echo "			<img id=\"b_speaker\" src=\"styles/button_speaker_off.png\" title=\"FX ON\"/ onclick=\"fx(1)\" />\n";
 	}
 	echo "			</li>\n";
+	*/
 	echo "			<li>\n";
 	if ($konsole) {
 		echo "			<a href=\"?page={$page}&konsole=0\">\n";
