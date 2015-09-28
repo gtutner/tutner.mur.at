@@ -16,7 +16,7 @@
 	<div class="headerplayer">
 			<?php f_audioplayer ('audio/tutner_-_nim_-_2014-08-27_-_section5.mp3'); ?>
 	</div>
-	<div class="feature" style="visibility: hidden;">
+	<div class="feature">
 			<span class="feature-title">
 				NEXT:
 			</span>
