@@ -54,15 +54,17 @@ div.left {
 
 /* Main */
 
-div.main {
+#main {
   white-space: nowrap;
 }
 
-div.main-left {
-   min-height: 500px;
+#main-left {
+   min-height: 713px;
    width: 950px;
    float: left;
    white-space: normal;
+   background-color: #f8f8f8;
+   padding: 5px;
 }
 
 div.main-right {
@@ -320,7 +322,7 @@ div.seperator {
   height: 3px;
   width: 950px;
   margin-top: 5px;
-  background-image: url('../pics/tutner2008_merged_3.png');
+  /* background-image: url('../pics/tutner2008_merged_3.png'); */
 }
 
 /* Header */

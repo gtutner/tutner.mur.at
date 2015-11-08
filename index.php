@@ -16,8 +16,8 @@ include 'pagehead.html';
 <?php include 'header.php'; ?>
 </div>
 
-<div class="main">
-	<div class="main-left">
+<div id="main">
+	<div id="main-left">
 		<?php f_pageheader(); ?>
 		<?php f_insertpage(); ?>
 	</div>
