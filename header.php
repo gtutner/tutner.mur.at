@@ -22,7 +22,7 @@
 			</span>
 			<span>
 				<?php include 'data/next.txt'; ?>
-			</span>
+			</span>			
 	</div>
 	<div>
 		<div class="topnavi">
