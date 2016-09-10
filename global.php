@@ -1,5 +1,7 @@
 <?php
 
+# Test Comment
+
 # DEFAULTS / SETUP / INIT
 
 $pagesfolder = $a_settings['pagesfolder'];
