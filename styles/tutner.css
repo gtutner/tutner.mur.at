@@ -405,7 +405,7 @@ span.feature-title {
 }
 
 div.topnavi {
-  font-size: 16px;
+  font-size: 15px;
   float: left;
   margin-top: 18px;
 }
@@ -426,7 +426,7 @@ li.topnavi {
 a:link.topnavi-first {
   text-decoration: none;
   color: black;
-  padding-right: 10px;
+  padding-right: 8px;
   padding-left: 0;
 }
 a:visited.topnavi-first {
@@ -439,8 +439,8 @@ a:hover.topnavi-first {
 a:link.topnavi {
   text-decoration: none;
   color: black;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 8px;
+  padding-left: 8px;
 }
 a:visited.topnavi  {
   color: black;
