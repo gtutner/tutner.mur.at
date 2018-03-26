@@ -441,19 +441,24 @@ div.topnavi {
 }
 
 #topnavi-first a:link {
-  text-decoration: none;
-  color: black;
-  padding-right: 8px;
   padding-left: 0;
 }
 
-#topnavi-first a:visited {
-  color: black;
+#blackpanther {
+	background-color: #000000;
 }
 
-#topnavi-first a:hover {
-  background-color: #cccccc;
-  color: black;
+#blackpanther a:link {
+	color: white;
+}
+
+#blackpanther a:visited {
+	color: white;
+}
+
+#blackpanther a:hover {
+	background-color: #000000;
+	color: black;
 }
 
 /* Footer */
