@@ -412,10 +412,10 @@ div.topnavi {
 
 /** Navigation **/
 
-ul.topnavi {
+.topnavi ul {
   margin: 0;
 }
-li.topnavi {
+.topnavi li {
   height: 16px;
   list-style-type: none;
   float: left;
@@ -423,29 +423,35 @@ li.topnavi {
   border-right-style: solid;
   margin: 0;
 }
-a:link.topnavi-first {
-  text-decoration: none;
-  color: black;
-  padding-right: 8px;
-  padding-left: 0;
-}
-a:visited.topnavi-first {
-  color: black;
-}
-a:hover.topnavi-first {
-  background-color: #cccccc;
-  color: black;
-}
-a:link.topnavi {
+
+.topnavi a:link {
   text-decoration: none;
   color: black;
   padding-right: 8px;
   padding-left: 8px;
 }
-a:visited.topnavi  {
+
+.topnavi a:visited  {
   color: black;
 }
-a:hover.topnavi  {
+
+.topnavi a:hover  {
+  background-color: #cccccc;
+  color: black;
+}
+
+#topnavi-first a:link {
+  text-decoration: none;
+  color: black;
+  padding-right: 8px;
+  padding-left: 0;
+}
+
+#topnavi-first a:visited {
+  color: black;
+}
+
+#topnavi-first a:hover {
   background-color: #cccccc;
   color: black;
 }
