@@ -27,7 +27,7 @@ A descripion of the functions is at the end of this document.
 
 f_vargetcookie ($x,$cv)					...	Retrieve or set Cookie
 f_header_switches ()					...	Write HTML for header switches (Terminal, Twitter)
-f_pageheader ()							...	Write HTML for page (article) header (title and language buttons on top)
+f_pageheader ()							...	Write HTML for page (article) header (filename and language buttons on top)
 f_pageswitches ($page)					...	Write HTML for page (article) switches (language)
 f_insertpage ()							...	Insert page :)
 f_audioplayer ($audiofile)				... Audio player
@@ -53,10 +53,12 @@ if [isset[$_COOKIE['rock']]] {
 $a_pages = f_getcsv("{$datafolder}/pages.csv");
 foreach($a_pages as $key => $value) {
 	$a_pages[$key] = array (
-		"title" => $a_pages [$key][1],
+		"filename" => $a_pages[$key][1],
 		"de" => $a_pages[$key][2],
-		"en" => $a_pages[$key][3],
-		"pic" => $a_pages[$key][4]
+		"title_de" => $a_pages[$key][3],
+		"en" => $a_pages[$key][4],
+		"title_en" => $a_pages[$key][5],
+		"pic" => $a_pages[$key][6]
 	);
 }
 
@@ -102,6 +104,14 @@ if ($a_pages[$page][$lang] != "") {
 			}
 		}
 		
+/** Page Title **/
+if ($lang == 'de') {
+	$pagetitle = $a_pages[$page]['title_de'];
+} else {
+	$pagetitle = $a_pages[$page]['title_en'];
+}
+	
+		
 /** pageexists **/
 if ($pagelink == "") {
 	$pageexists = 0;
@@ -111,15 +121,15 @@ if ($pagelink == "") {
 		$pageexists = 0;
 }
 
-/** Page Title **/
-if ($a_pages[$page]['title'] != "") {
-	$pagetitle = $a_pages[$page]['title'];
+/** Page Filename **/
+if ($a_pages[$page]['filename'] != "") {
+	$pagefilename = $a_pages[$page]['filename'];
 } else {
-	$pagetitle = "";
+	$pagefilename = "";
 }
 
 /** Page Header **/
-if (($pagetitle != "") || (($a_pages[$page]['de'] != "") && (($a_pages[$page]['en'] != "")))) {
+if (($pagefilename != "") || (($a_pages[$page]['de'] != "") && (($a_pages[$page]['en'] != "")))) {
 	$pageheader = 1;
 } else {
 	$pageheader = 0;
@@ -188,15 +198,15 @@ function f_header_switches () {
 }
 
 function f_pageheader () {
-	global $pageheader, $page, $pagetitle;
+	global $pageheader, $page, $pagefilename;
 	
 	if ($pageheader) {
 		
 		echo "<div class=\"pageheader\">\n";
 		
-		if ($pagetitle != 'none') {
-			echo "<div class=\"title\">\n";
-			echo "file: /{$pagetitle}";
+		if ($pagefilename != 'none') {
+			echo "<div class=\"filename\">\n";
+			echo "file: /{$pagefilename}";
 			echo "</div>\n";
 		}
 		
@@ -228,15 +238,20 @@ function f_pageswitches ($page) {
 }
 
 function f_insertpage () {
-	global $pagelink, $pageexists;
+	global $pagelink, $pageexists, $pagetitle;
 	
 	f_pagepic();
+	
+	echo "<div class=\"page-intro\">\n";
+	echo "<h1>{$pagetitle}</h1>\n";
 	
 	if (($pagelink != 'none') && $pageexists) {
 		include $pagelink;
 	} else {
 		echo "file not found";
 	}
+	
+	echo "</div>\n";
 }
 
 function f_audioplayer ($audiofile) {

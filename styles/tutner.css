@@ -122,7 +122,7 @@ a:hover.page-lang {
   background-color: #999999;
   color: white;
 }
-div.title {
+div.filename {
   float: left;
   /* background-color: #f6f6f6; */
   color: #888888;
@@ -468,7 +468,7 @@ div.footer {
 
 div.footer-left {
   float: left;
-  width: 80%;
+  width: 50%;
 }
 
 .footer-left p {
@@ -477,6 +477,14 @@ div.footer-left {
 
 div.footer-right {
   text-align: right;
+}
+
+div.footer-center {
+	float: left;
+}
+
+.footer-center p {
+	margin-left: 0;
 }
 
 /* konsole */

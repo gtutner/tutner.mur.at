@@ -1,12 +1,13 @@
-id,title,de,en,pic
-frontpage,,front.html,,
-filenotfound,filenotfound,filenotfound.html,,
-1,about,1.html,1_en.html,2
-2,from_disco_to_noise,2.html,2_en.html,3
-3,aswl_v1.0,3.html,,
-4,contact,4.html,,
-5,audio_video,5.html,,
-6,dope-beat-rosengarten,6.html,6_en.html,4
-7,dates,7.html,,
-8,gallery,8.html,,
-9,the-pd-hendrix-experience,9.html,,5
+id,filename,de,title_de,en,title_en,pic
+frontpage,,front.html,,,,
+filenotfound,filenotfound,filenotfound.html,,,,
+1,about,1.html,about,1_en.html,about,2
+2,from_disco_to_noise,2.html,from disco to noise,2_en.html,from disco to noise,3
+3,aswl_v1.0,3.html,Anti Social Web Log,,Anti Social Web Log,
+4,contact,4.html,vCard,,vCard,
+5,audio_video,5.html,audio/video,,audio/video,
+6,dope-beat-rosengarten,6.html,Dope Beat Rosengarten,6_en.html,Dope Beat Rose Garden,4
+7,dates,7.html,dates,,dates,
+8,gallery,8.html,gallery,,gallery,
+9,the-pd-hendrix-experience,9.html,The pd~Hendrix Experience,,The pd~Hendrix Experience,5
+10,privacy-policy,10.html,Privacy Policy,10_en.html,Privacy Policy,6

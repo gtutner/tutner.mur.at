@@ -25,6 +25,7 @@
 		<div class="konsole-line">$page = <?php echo $page; ?></div>
 		<div class="konsole-line">$pagelink = <?php echo $pagelink; ?></div>
 		<div class="konsole-line">$pageexists = <?php echo $pageexists; ?></div>
+		<div class="konsole-line">$pagefilename = <?php echo $pagefilename; ?></div>
 		<div class="konsole-line">$pagetitle = <?php echo $pagetitle; ?></div>
 		<div class="konsole-line">$pageheader = <?php echo $pageheader; ?></div>
 		<div class="konsole-line">$pagepic = <?php echo $pagepic; ?></div>
