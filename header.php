@@ -6,7 +6,7 @@
 			echo "	<a id=\"headerpic\" href=\"/\">\n";
 		}
 	?>
-						<img class="header-col1" src="pics/tutner4.jpg" alt="Gernot Tutner" />
+						<img src="pics/tutner4_299x200.jpg" alt="Gernot Tutner" />
 					</a>
 </div>
 
