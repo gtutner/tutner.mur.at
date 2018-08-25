@@ -14,7 +14,7 @@
 	<div class="sitetitle">Gernot Tutner</div>
 	<div class="sitesubtitle">from disco to noise</div >
 	<div class="headerplayer">
-			<?php f_audioplayer ('audio/tutner_-_nim_-_2014-08-27_-_section5.mp3'); ?>
+		<audio src="audio/tutner_-_nim_-_2014-08-27_-_section5.mp3" width="250" height="24" controls class="mejs__player" data-mejsoptions='{"features": ["playpause", "volume", "progress"]}'></audio>			
 	</div>
 	<div class="feature">
 			<span class="feature-title">

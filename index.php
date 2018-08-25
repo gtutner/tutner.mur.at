@@ -6,11 +6,6 @@ include 'pagehead.html';
 ?>
 
 <body>
-<script type="text/javascript">
-			AudioPlayer.setup("scripts/audio-player/player.swf", {  
-							width: 250
-						});
-</script>
 
 <div class="header">
 <?php include 'header.php'; ?>

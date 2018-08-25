@@ -547,3 +547,84 @@ div.konsole-line {
   height: 13px;
 }
 
+
+/* Mediaelement.js */
+
+.headerplayer audio {
+	display: none;
+}
+
+.headerplayer .mejs__container {
+	/* background: url("tutner2008_merged_3_tutner_250x24.png"); */
+	/*background: #888888;*/
+	background: none;
+	/*border-style: solid;*/
+	/*border-width: 1px;*/
+	/*border-radius: 4px;*/
+}
+
+.headerplayer .mejs__controls {
+	height: 24px;
+}
+
+.headerplayer .mejs__controls:not([style*="display: none"]) {
+	background: none;
+}
+
+.headerplayer .mejs__button, .mejs__time, .mejs__time-rail {
+	height: 24px;
+}
+
+.headerplayer .mejs__button > button {
+	background: url(tutner-mediaplayer.svg);
+	margin: 0;
+	margin-top: 4px;
+	height: 16px;
+	width: 16px;
+}
+
+.headerplayer .mejs__play > button {
+	background-position: 0 0;
+}
+
+.headerplayer .mejs__pause > button {
+	background-position: -16px 0;
+}
+
+.headerplayer .mejs__replay > button {
+	background-position: -64px 0;
+}
+
+.headerplayer .mejs__mute > button {
+	background-position: -32px 0;
+}
+
+.headerplayer .mejs__unmute > button {
+	background-position: -48px 0;
+}
+	
+.headerplayer .mejs__offscreen {
+	display: none;
+}
+
+.headerplayer .mejs__horizontal-volume-total {
+	top: 8px;
+	background: #000000;
+}
+
+.headerplayer .mejs__horizontal-volume-current {
+	background: #cccccc;
+}
+
+.headerplayer .mejs__time-rail {
+	padding-top: 7px;
+}
+
+.headerplayer .mejs__time-total {
+	margin-top: 0;
+	background: #000000;
+}
+
+.headerplayer .mejs__time-current, .mejs__time-handle-content {
+	background: #cccccc;
+}
