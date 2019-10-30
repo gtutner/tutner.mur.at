@@ -60,7 +60,7 @@ div.left {
 
 #main-left {
    min-height: 713px;
-   width: 950px;
+   width: 1031px;
    float: left;
    white-space: normal;
    background-color: #f8f8f8;
@@ -68,7 +68,7 @@ div.left {
 }
 
 div.main-right {
-	margin-left: 1000px;
+	margin-left: 1050px;
 }
 
 /* Pages */
@@ -292,6 +292,34 @@ a:visited {
 	margin-top: 300px;
 }
 
+#gallery_b {
+	width: 542px;
+	height: 300px;
+	margin-left: 8px;
+	margin-right: 15px;
+	float: left;
+}
+
+#gallery_b img {
+	height: 300px;
+	float: left;
+}
+
+#gallery_b div {
+	background: url('video_button.png') no-repeat center center;
+	width: 542px;
+	height: 300px;
+	position: absolute;
+}
+
+#gallery_b p {
+	font-weight: bold;
+	margin-left: 0;
+	text-align: center;
+	background-color: #cccccc;
+	border-radius: 4px;
+	margin-bottom: 0;
+}
 
 table.page-main {
   margin-left: 16px;
@@ -328,7 +356,7 @@ div.seperator {
 /* Header */
 
 div.header {
-  width: 1325px;
+  width: 1375px;
 }
 .header-col1 {
   height: 200px;
@@ -340,11 +368,11 @@ div.header-col1 {
 div.header-col2 {
   margin-left: 10px;
   float: left;
-  width: 639px;
+  width: 720px;
   height: 200px;
 }
 div.header-col3 {
-  margin-left: 1000px;
+  margin-left: 1050px;
   height: 200px;
 }
 div.sitetitle {
