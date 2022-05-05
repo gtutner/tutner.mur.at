@@ -6,7 +6,8 @@
 			echo "	<a id=\"headerpic\" href=\"/\">\n";
 		}
 	?>
-						<img src="pics/tutner4_299x200.jpg" alt="Gernot Tutner" />
+						<!-- <img src="pics/tutner4_299x200.jpg" alt="Gernot Tutner" /> -->
+						<img src="pics/tutner2008_merged_3_tutner_299x200.jpg" alt="T Noise" />
 					</a>
 </div>
 
